@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML form</title>
+    </head>
+    <body style="background: pink;">
+        <!-- Открываем форму. При отправке формы данные будут отправлены на страницу MyHandleForm.php методом POST. -->
+        <form action="MyHandleForm.php" method="POST">
+            <table>
+                <tr>
+                    <td>First_Name </td>
+                    <!-- Создаем поле ввода для имени с именем "First_Name" и размером 20 символов. -->
+                    <td><input type="text" name="First_Name" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Last_Name</td>
+                    <!-- Создаем поле ввода для фамилии с именем "Last_Name" и размером 20 символов. -->
+                    <td><input type="text" name="Last_Name" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <!-- Создаем поле ввода для email с именем "Email" и размером 40 символов. -->
+                    <td><input type="text" name="Email" size="40"> </td>
+                </tr>
+                <tr>
+                    <td>Comments</td>
+                    <!-- Создаем поле для ввода комментариев с именем "Comments", размерами 5 строк и 40 символов в строке. -->
+                    <td><textarea name="Comments" rows="5" cols="40"></textarea></td>
+                </tr>
+            </table>
+            <!-- Создаем кнопку отправки формы с именем "Submit" и надписью "OK". -->
+            <input type="submit" name="Submit" value="OK">  
+            <!-- Создаем кнопку сброса формы с именем "Reset" и надписью "Cancel". -->
+            <input type="reset" name="Reset" value="Cancel">
+        </form>
+    </body>
+</html>
